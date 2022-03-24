@@ -4,12 +4,12 @@ const axios = require('axios');
 const {Client} = require('pg');
 const app = express();
 const dotenv = require('dotenv').config();
-const Redis = require('ioredis');
+const Redis = require('redis');
 const URL = 'https://www.googleapis.com/books/v1/volumes?key=';
 
 
 
-const redisClient = new Redis();
+const redisClient = Redis.createClient();
 
 
 
