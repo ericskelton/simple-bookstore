@@ -9,3 +9,5 @@ uses expressJS, and the google books api to create a simple bookstore applicatio
 - Create a new project
 - Create a new API Key for the project 
 - Add API_KEY=<API_KEY> to the environment variables
+
+then run docker-compose up
