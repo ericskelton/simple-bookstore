@@ -1,0 +1,36 @@
+
+version: '3'
+services:
+
+  # server:
+  #   build:
+  #     context : ./server/
+  #     dockerfile: Server.Dockerfile
+  #   ports:
+  #     - "5000:5000"
+  #   depends_on:
+  #     - redis
+     
+  #   environment: 
+  #     - API_KEY=${API_KEY}
+    
+
+  redis: 
+    image: redis
+    container_name: cache
+    expose: 
+      - 6379
+    
+      
+    
+  # app:
+  #   build:
+  #     context : ./server/
+  #     dockerfile: Server.Dockerfile
+  #   links: 
+  #     - redis
+  #   ports:
+  #     - 5000:5000
+  #   environment:
+  #     - REDIS_URL=redis://cache
+  #     - API_KEY=${API_KEY}

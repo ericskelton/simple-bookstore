@@ -1,0 +1,23 @@
+{
+  "name": "simple-bookstore",
+  "version": "1.0.0",
+  "description": "bookstore application for seng468 a2",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/app.js"
+  },
+  "author": "Eric Skelton",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "ioredis": "^4.28.5",
+    "nodemon": "^2.0.15",
+    "pg": "^8.7.3",
+    "redis": "^4.0.4",
+    "yarn": "^1.22.18"
+  },
+  "devDependencies": {}
+}
